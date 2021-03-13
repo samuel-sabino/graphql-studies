@@ -1,0 +1,21 @@
+{
+  "name": "graphql-studies",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "repository": "https://github.com/SamuelSabino/graphql-studies.git",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "author": "Samuel <lima.samuel81@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.21.1",
+    "graphql": "^15.5.0",
+    "graphql-iso-date": "^3.6.1",
+    "mongoose": "^5.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "sucrase": "^3.17.1"
+  }
+}
