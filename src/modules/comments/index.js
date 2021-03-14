@@ -1,7 +1,7 @@
-import { GraphQLInputObjectType, GraphQLList, GraphQLString } from 'graphql';
+import { GraphQLInputObjectType, GraphQLList, GraphQLString } from 'graphql'
 
-import CommentType from './comment-type'
-import { getComments, saveComment } from './comment-loader'
+import CommentType from './comment-type.js'
+import { getComments, saveComment } from './comment-loader.js'
 
 export const queries = {
   comments: {

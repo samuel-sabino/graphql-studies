@@ -1,5 +1,6 @@
 
-import { Schema, model } from "mongoose";
+import pkg from 'mongoose'
+const { Schema, model } = pkg
 
 const schema = new Schema(
   {
@@ -15,6 +16,6 @@ const schema = new Schema(
   {
     timestamps: true
   }
-);
+)
 
-export default model("Comment", schema);
+export default model('Comment', schema)

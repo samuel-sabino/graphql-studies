@@ -1,3 +1,3 @@
-import { queries } from "./comments";
+import { queries } from './comments/index.js'
 
-export default { ...queries };
+export default { ...queries }

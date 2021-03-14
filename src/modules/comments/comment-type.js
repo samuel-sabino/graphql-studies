@@ -1,9 +1,11 @@
 
-import { GraphQLObjectType, GraphQLNonNull, GraphQLString } from "graphql"
-import { GraphQLDateTime } from "graphql-iso-date"
+import { GraphQLNonNull, GraphQLObjectType, GraphQLString } from 'graphql'
+import pkg from 'graphql-iso-date'
+
+const { GraphQLDateTime } = pkg
 
 export default new GraphQLObjectType({
-  name: "CommentType",
+  name: 'CommentType',
   fields: {
     id: {
       type: GraphQLNonNull(GraphQLString)

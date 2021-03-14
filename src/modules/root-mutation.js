@@ -1,5 +1,3 @@
-import { mutations } from "./comments";
+import { mutations } from './comments/index.js'
 
-export default {
-  ...mutations
-};
+export default { ...mutations }
