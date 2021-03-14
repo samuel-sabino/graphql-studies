@@ -1,5 +1,14 @@
 {
+  "ignore": [
+    ".git",
+    "node_modules"
+  ],
+  "verbose": false,
+  "watch": [
+    "src"
+  ],
   "execMap": {
-    "js": "sucrase-node src/server.js"
-  }
+    "ts": "node --inspect=0.0.0.0:9225 -r ts-node/register -r dotenv/config"
+  },
+  "delay": "250"
 }
