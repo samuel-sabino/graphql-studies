@@ -1,0 +1,27 @@
+version: '2.1'
+services:
+  db:
+    container_name: database
+    image: mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./data/db:/data/db
+
+  app:
+    container_name: BACKEND-SERVER
+    image: graphql-studies
+    build: '.'
+    environment:
+      PORT: 8080
+    depends_on:
+      - db
+    links:
+      - db
+    ports:
+      - '4000:4000'
+    working_dir: /app/graphql-studies/
+    volumes: 
+      - /app/graphql-studies/node_modules
+      - ./src:/app/graphql-studies/src
+      - ./__tests__:/app/graphql-studies/__tests__
